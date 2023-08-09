@@ -50,4 +50,6 @@ function sync_dotfile() {
   echo "\033[32m[SUCCESS] update dotfiles\033[39m"
 }
 
-sync_dotfile
+if [[ -n $(yadm status -s) ]]; then
+  sync_dotfile
+fi
