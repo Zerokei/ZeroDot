@@ -1,4 +1,4 @@
-local logo = table.concat({
+local big_logo = {
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⡴⠶⠶⠶⠶⠶⠶⠶⠶⢦⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
   "⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⠞⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀",
   "⠀⠀⠀⠀⠀⠀⣠⣾⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⣷⣄⠀⠀⠀⠀⠀⠀",
@@ -18,7 +18,22 @@ local logo = table.concat({
   "⠀⠀⠀⠀⠀⠀⠘⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀",
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀",
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠻⠿⠿⢿⣿⣿⠿⠿⠿⠟⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-}, "\n")
+}
+
+local small_logo = {
+  "⠀  ⠀ ⠀    ⠀⢀⡤⠔⠒⠊⠉⠉⠑⠒⠲⢤⡀⠀⠀⠀⠀         ",
+  "⠀  ⠀     ⡠⠞⠁⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⢈⣳⣄⠀⠀         ",
+  "⠀       ⡜⠁⢀⣤⡾⣿⠇⠀⠀⠀⠀⠀⣠⣶⣿⡿⠋⢣⠀         ",
+  "       ⢰⣡⡶⠟⠁⣼⣿⠀⠀⠀⣀⣴⣿⣿⣿⠋⠀⠀⠀⡇         ",
+  "       ⢼⠋⠀⠀⢰⣿⡇⢀⣤⣾⣿⡿⡿⠋⠈⡇⠀⠀⠀⣿         ",
+  "       ⢸⡀⠀⠀⣾⣿⣿⣿⣿⢟⡵⠋⠀⠀⢀⡇⠀⠀⠀⡏         ",
+  "       ⠀⠳⣦⣼⣿⣿⡿⣫⠴⠯⣀⣀⣠⠴⠋⠀⠀⢀⡜⠀         ",
+  "       ⠀⠀⠙⢿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⡶⠊⠀⠀         ",
+  "       ⠀⠀⠀⠀⠈⠛⠻⠿⣿⣿⣿⡿⠿⠟⠛⠁⠀⠀⠀⠀         ",
+  "                                    ",
+  "We love because he first loved us :)"
+}
+
 
 return {
   {
@@ -30,7 +45,7 @@ return {
       local alpha = require("alpha")
       local dashboard = require("alpha.themes.dashboard")
 
-      dashboard.section.header.val = logo
+      dashboard.section.header.val = small_logo
 
       dashboard.section.buttons.val = {
         -- dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
