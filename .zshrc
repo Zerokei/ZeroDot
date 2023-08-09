@@ -42,13 +42,9 @@ function download_dotfile() {
   fi
   yadm init
   yadm clone https://github.com/Zerokei/ZeroDot
-  yadm decrypt
 }
 function sync_dotfile() {
-  echo '.ssh/id_rsa' > ~/.config/yadm/encrypt
-  yadm encrypt
-  yadm status
-  yadm list
   yadm commit -am "update dotfiles"
   yadm push origin master:main
+  echo "[SUCCESS] update dotfiles"
 }
