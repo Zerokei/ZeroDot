@@ -55,6 +55,3 @@ if [[ -n $(yadm status -s) ]]; then
   sync_dotfile
 fi
 
-
-# !NOTE: Startup Logs
-neofetch
