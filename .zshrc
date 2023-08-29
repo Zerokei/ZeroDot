@@ -55,3 +55,4 @@ if [[ -n $(yadm status -s) ]]; then
   sync_dotfile
 fi
 
+source ~/.bash_profile
