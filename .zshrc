@@ -25,6 +25,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # !NOTE: some more ls aliases
