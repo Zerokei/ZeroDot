@@ -51,7 +51,7 @@ function download_dotfile() {
 }
 function sync_dotfile() {
   yadm commit -am "update dotfiles" &> /dev/null
-  yadm push origin master:main &> /dev/null
+  yadm push origin &> /dev/null
   echo "\033[32m[SUCCESS] update dotfiles\033[39m"
 }
 
