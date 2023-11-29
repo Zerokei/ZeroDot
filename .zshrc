@@ -54,6 +54,5 @@ function sync_dotfile() {
 }
 
 if [[ -n $(yadm status -s) ]]; then
-  echo "\033[31m[WARNING] syncing dotfiles\033[39m"
   sync_dotfile
 fi
