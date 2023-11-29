@@ -13,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-source ~/.mac.zshrc
+source ~/.zsh.mac.rc
 
 # !NOTE: zsh plugins
 plugins=(
