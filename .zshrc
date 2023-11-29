@@ -35,11 +35,8 @@ alias l='ls -CF'
 alias vim='nvim'
 
 # !NOTE: node.js configurations
-export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # !NOTE: yadm automization
 function download_dotfile() {
@@ -59,4 +56,4 @@ if [[ -n $(yadm status -s) ]]; then
   sync_dotfile
 fi
 
-source ~/.bash_profile
+source ~/.zshrc.mac
