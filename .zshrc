@@ -13,6 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+source ~/.zshrc.mac
 
 # !NOTE: zsh plugins
 plugins=(
@@ -56,5 +57,3 @@ if [[ -n $(yadm status -s) ]]; then
   echo "\033[31m[WARNING] syncing dotfiles\033[39m"
   sync_dotfile
 fi
-
-source ~/.zshrc.mac
