@@ -18,6 +18,7 @@ source ~/.zsh.mac.rc
 # !NOTE: zsh plugins
 plugins=(
   aliases
+  brew
   colorize
   zsh-autosuggestions
   fast-syntax-highlighting
