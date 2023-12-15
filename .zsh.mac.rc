@@ -1,0 +1,21 @@
+# !NOTE: node.js configurations
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# !NOTE: Proxy Configuration
+function proxy_on() {
+  export http_proxy=http://127.0.0.1:54545
+  export https_proxy=$http_proxy
+}
+function proxy_off() {
+  unset http_proxy
+  unset https_proxy
+}
+proxy_on
+
+
+# !NOTE: Plugin Configuration
+export ZSHZ_DATA="$ZSH/cache/.z"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
+export HISTFILE="$ZSH/cache/.zsh_history"
