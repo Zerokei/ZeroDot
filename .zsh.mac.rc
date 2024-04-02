@@ -19,3 +19,11 @@ proxy_on
 export ZSHZ_DATA="$ZSH/cache/.z"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 export HISTFILE="$ZSH/cache/.zsh_history"
+
+
+# !NOTE: PNPM
+export PNPM_HOME="/Users/chritch/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
