@@ -67,3 +67,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# pipx
+export PATH=$PATH:/Users/chritch/.local/bin
